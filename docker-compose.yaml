@@ -1,0 +1,13 @@
+version: '3'
+services:
+
+  cli:
+    image: quay.io/verygoodsecurity/vgs-cli:${VERSION:-latest}
+    env_file:
+      - .env
+    ports:
+      - "7745:7745"
+      - "8390:8390"
+      - "9056:9056"
+    volumes:
+      - ./.tmp:/tmp
