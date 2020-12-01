@@ -15,6 +15,7 @@ Set up cron job to run, for example, every 5 minutes
 PATH=/usr/local/bin
 */5 * * * * cd /Users/absolute path to your project/vgscli-auto-logs && docker-compose run cli vgs logs access --vault tntza6lqen2 --since 5m >> cron_res.yaml
 ```
+You can also add option `--output, -o` to set output format as `json`. Defaults to `yaml` if unspecified.
 
 ### Check pulled logs
 Compare the downloaded `cron_res.yaml` with your dashboard access logger, you will see you have pulled the complete logs

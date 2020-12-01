@@ -2,3 +2,4 @@ crontab*
 .env
 **/.DS_Store
 .tmp*
+.idea
